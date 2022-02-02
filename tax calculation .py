@@ -13,7 +13,7 @@ if slab_change == "y" :
     #new slab
     a=float(input("enter % tax for =<500k : "))
     b=float(input("enter % tax for (500k  1M] : "))
-    a=float(input("enter % tax for >1M : "))
+    c=float(input("enter % tax for >1M : "))
     
 elif slab_change == "n" :
     #default slab
