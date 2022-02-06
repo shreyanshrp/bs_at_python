@@ -22,6 +22,7 @@ elif slab_change == "n" :
     c=4
 else:
     print("Invalid input, write only 'y' or 'n' (without quotes)")
+    exit()
 
 #income input:
 incm_m= float(input("enter your monthly income:"))
