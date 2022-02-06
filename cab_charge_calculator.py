@@ -1,13 +1,24 @@
 #Python program to calculate taxi charges according to specific slab of kilometers.
 #shreyanshrp (github.com/shreyanshrp)
 
+#Ask for change in charges:
+ask=input("Do you want to change the rates? (Y/N) : ")
+if ask == "Y" or ask == "y" :
+    frst_10 = float(input("Enter rate(Rs/Km) for first 10Km : "))
+    nxt_90 = float(input("Enter rate(Rs/Km) for next 90Km : "))
+    abv_100 = float(input("Enter rate(Rs/Km) for further : "))
+elif ask == "N" or ask == "n" :
+    print("Taking default values for Rate")
+    #Charges Declaration:
+    frst_10 = 15.00
+    nxt_90 = 8.00
+    abv_100 = 6.00
+else:
+    print("Invalid input, Enter only 'Y' or 'N' (without quotes).")
+    exit()
+
 #Kilometers input:
 tkm = float(input("Enter TOTAL no. of kilometers travelled : "))
-
-#Charges Declaration:
-frst_10 = 15
-nxt_90 = 8
-abv_100 = 6
 
 #fixed distance cost:
 rs_10km=10*frst_10
